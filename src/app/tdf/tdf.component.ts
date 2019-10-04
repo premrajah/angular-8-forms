@@ -10,7 +10,7 @@ export class TdfComponent implements OnInit {
 
   topics = ['Angular', 'React', 'Vue'];
 
-  userModel = new User('', 'Man', 936467684979, '', 'morning', true);
+  userModel = new User('', '', 0, '', '', true);
 
   constructor() { }
 
