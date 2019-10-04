@@ -5,7 +5,7 @@
     {{errorMessage}}
   </div>
 
-  <form #tdfForm="ngForm" *ngIf="!submitted" (ngSubmit)="onSubmit()" novalidate>
+  <form #tdfForm="ngForm" *ngIf="!submitted" (ngSubmit)="onSubmit(tdfForm)" novalidate>
 
     FormValues {{tdfForm.value | json}}
     <hr>

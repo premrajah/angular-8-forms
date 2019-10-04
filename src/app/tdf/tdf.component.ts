@@ -34,9 +34,9 @@ export class TdfComponent implements OnInit {
     }
   }
 
-  onSubmit() {
+  onSubmit(tdfForm) {
+    // console.log(tdfForm);
     this.submitted = true;
-    console.log(this.userModel);
     this.enrolmentService.enroll(this.userModel).subscribe(
       data => {
         console.log('Success!: ', data);
