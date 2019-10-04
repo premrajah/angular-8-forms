@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../user';
-import { EnrolmentService } from '../enrolment.service';
+import { EnrolmentService } from './enrolment.service';
 
 @Component({
   selector: 'app-tdf',
