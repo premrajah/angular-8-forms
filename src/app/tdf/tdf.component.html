@@ -8,8 +8,8 @@
     <hr>
     <div class="form-group">
       <label>Name</label>
-      <input type="text" class="form-control" required #name="ngModel" name="name" [(ngModel)]="userModel.name">
-      <small>Property: Untouched: {{name.untouched}}, Pristine: {{name.pristine}}, Dirty: {{name.dirty}}, Valid: {{name.valid}}</small>
+      <input type="text" class="form-control" [class.is-invalid]="name.invalid && name.touched" required #name="ngModel" name="name" [(ngModel)]="userModel.name">
+      <!-- <small>Property: Untouched: {{name.untouched}}, Pristine: {{name.pristine}}, Dirty: {{name.dirty}}, Valid: {{name.valid}}</small> -->
     </div>
 
 
@@ -21,7 +21,8 @@
 
     <div class="form-group">
       <label>Phone</label>
-      <input type="tel" class="form-control" #phone="ngModel" name="phone" [(ngModel)]="userModel.phone">
+      <input type="tel" class="form-control" pattern="^\d{10}$" [class.is-invalid]="phone.invalid && phone.touched" #phone="ngModel" name="phone" [(ngModel)]="userModel.phone">
+      <!-- validating for 10 digitas -->
     </div>
 
     <div class="form-group">
