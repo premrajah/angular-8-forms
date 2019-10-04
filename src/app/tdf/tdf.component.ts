@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../user';
+import { User } from '../tdf/user';
 import { EnrolmentService } from './enrolment.service';
 
 @Component({
