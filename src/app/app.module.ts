@@ -6,10 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TdfComponent } from './tdf/tdf.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveComponent } from './reactive/reactive.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
     TdfComponent,
+    ReactiveComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
