@@ -15,7 +15,7 @@ export class EnrolmentService {
 
   enroll(user: User) {
     return this.http.post<any>(_url, user)
-    .pipe(catchError(this.errorHandler))
+    .pipe(catchError(this.errorHandler));
   }
 
 
